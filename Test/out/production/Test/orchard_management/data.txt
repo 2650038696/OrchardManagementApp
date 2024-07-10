@@ -1,0 +1,21 @@
+
+-- 地块数据
+insert into `plots` (`id`, `location`, `area`, `sunlight_duration`, `soil_features`) values('01','河北','80','90','酸性');
+insert into `plots` (`id`, `location`, `area`, `sunlight_duration`, `soil_features`) values('02','湖北','100','100','好');
+insert into `plots` (`id`, `location`, `area`, `sunlight_duration`, `soil_features`) values('03','东北','90','90','黑土地');
+insert into `plots` (`id`, `location`, `area`, `sunlight_duration`, `soil_features`) values('04','河南','80',NULL,NULL);
+
+-- 果树数据
+insert into `tree_varieties` (`id`, `name`, `planting_time`, `age`, `plot_id`, `quantity`, `area`, `yield_per_year`, `quality_ratio`) values('01','苹果',NULL,NULL,'02',NULL,'20',NULL,NULL);
+insert into `tree_varieties` (`id`, `name`, `planting_time`, `age`, `plot_id`, `quantity`, `area`, `yield_per_year`, `quality_ratio`) values('02','香蕉','2023-08-03','8','01',NULL,NULL,NULL,NULL);
+insert into `tree_varieties` (`id`, `name`, `planting_time`, `age`, `plot_id`, `quantity`, `area`, `yield_per_year`, `quality_ratio`) values('03','西瓜','2018-02-21','9','02','100','40','200','0.88');
+insert into `tree_varieties` (`id`, `name`, `planting_time`, `age`, `plot_id`, `quantity`, `area`, `yield_per_year`, `quality_ratio`) values('04','柑橘',NULL,NULL,'04','120','50',NULL,NULL);
+insert into `tree_varieties` (`id`, `name`, `planting_time`, `age`, `plot_id`, `quantity`, `area`, `yield_per_year`, `quality_ratio`) values('05','葡萄',NULL,NULL,'03',NULL,'20',NULL,NULL);
+
+-- 灌溉数据
+insert into `irrigation_records` (`id`, `plot_id`, `date`, `details`) values('01','02','2024-06-05','对苹果的灌溉');
+insert into `irrigation_records` (`id`, `plot_id`, `date`, `details`) values('02','02','2024-06-03','对西瓜的灌溉');
+
+-- 施肥数据
+insert into `fertilization_records` (`id`, `plot_id`, `date`, `details`) values('01','02','2024-06-01','对苹果的施肥');
+insert into `fertilization_records` (`id`, `plot_id`, `date`, `details`) values('02','02','2024-06-01','施肥');
